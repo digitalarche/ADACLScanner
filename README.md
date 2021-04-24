@@ -1,18 +1,25 @@
 ﻿# AD ACL Scanner
 
 ## Current version
-**Version: 5.9.2**
+**Version: 6.4**
 
-**21 November,2019**
+**08 January, 2021**
 
-**SHA256:** D1820EE9C3FB72A7417B2E2942B58BEAE1EA5F98AEDF8E513FD7C3FBE5F61841
+**SHA256:** 59E95375E1C243FADEAB5E52F941AF1BD2926D94135EB4A712E5C3029D0AD9EC
 
-*New Feature*
-* Including CanonicalName in output
-* Including Inheritance Disabled in CSV
+*Updates*
+* Update with latest OS/Schema versions numbers 
+
+*Fixed issues*
+* Minor fixes
 
 ## Download
-**Right click and save as** - **[Here](https://github.com/canix1/ADACLScanner/raw/master/ADACLScan.ps1)**
+**[Release](https://github.com/canix1/ADACLScanner/releases/tag/6.4)**
+
+## Donate
+Do you appreciate my work and want to buy me a beer? You can donate via PayPal: https://www.paypal.me/canix1 or send Bitcoins to <b>bc1qte7vlwhvrju7msv9hzfytwy7jd9vlmnjfpm0366d62yx4ke89czsavk0hr</b>
+
+![](https://github.com/canix1/ADACLScanner/blob/master/src/DonateBitCoin.png)
 
 ## Description
 * A tool completly written in PowerShell. 
@@ -43,9 +50,10 @@ Features and fixes https://github.com/canix1/ADACLScanner/wiki/History
 * Support input from pipeline. You can call ADACLScan.ps1 by sending a distinguishedName via pipeline.
 * Added formated synopsis to the script.
 
-![](https://github.com/canix1/ADACLScanner/blob/master/src/GUICustomSearch.gif)
+![](https://github.com/canix1/ADACLScanner/blob/master/src/ADACLScan6.0.png)
 ## Feature list
 
+* Scan linked Group Policy Objects
 * View HTML reports of DACLs/SACLs and save it to disk. 
 * Export DACLs/SACLs on Active Directory objects in a CSV format. 
 * Export DACLs/SACLs on Active Directory objects in a Excel sheet. 
@@ -81,6 +89,6 @@ Features and fixes https://github.com/canix1/ADACLScanner/wiki/History
 * Display group members in groups in the HTLM report. 
 * Present the value of the true SDDL in NTsecurityDescriptor, bypassing Object-Specific ACE merge done when a new instance of the ObjectSecurity class is initialized.
 ## System requirements
-* Powershell 2.0 or above 
+* Powershell 3.0 or above 
 * PowerShell using a single-threaded apartment 
 * Some functions requires Microsoft .NET Framework version 4.0
